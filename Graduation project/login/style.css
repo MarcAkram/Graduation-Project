@@ -1,0 +1,137 @@
+input[type="radio"],input[type="checkbox"]{
+    accent-color: #03fa6e;
+}
+#Login-div{
+    background-image: url("login.jpg");
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-repeat: round;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Login-div > div{
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#Login-div > div > form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#Login-div > div > form > label{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 10px;
+}
+#Login-div > div > form > input{
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#Login-div > div center{
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    font-family: "Kanit", sans-serif;
+    margin-bottom: 20px;
+}
+#Login-div > div > form > input[type="submit"]{
+    background-color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    width: 95%;
+    cursor: pointer;
+    transition: 0.5s all linear;
+}
+#Login-div > div > form > input[type="submit"]:hover{
+    background-color: rgb(146, 146, 146);
+}
+#Login-div input[type="text"],input[type="password"],input:not(input[type="radio"]){
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    transition: all 0.1s linear;
+}
+#Login-div input[type="text"]::placeholder,input[type="password"]::placeholder{
+    color: white;
+}
+#Login-div i.fa-lock,i.fa-user-tie,.fa-coins,.fa-globe{
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    position: relative;
+    bottom: 50px;
+    left: 85px;
+}
+#Login-div input[type="text"]:focus,input[type="password"]:focus{
+    outline: #03fa6e solid;
+}
+#Login-div #lang > span{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #03fa6e;
+}
+#Login-div #lang > label{
+    font-size: 15px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+#Login-div #lang input{
+    accent-color: #03fa6e;
+    margin-right: 10px;
+}
+#Login-div #lang{
+    margin-bottom: 30px;
+}
+#Login-div label[for="Coin"]{
+    color: #03fa6e;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+#mode-div > span{
+    color: #03fa6e;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-right: 8px;
+}
+#mode-div > label{
+    color: white;
+    font-weight: 900;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+#mode-div > input{
+    margin-right: 10px;
+}
+#mode-div{
+    margin-bottom: 10px;
+}

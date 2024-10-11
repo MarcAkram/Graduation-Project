@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="Login-div">
+        <div>
+            <center><span>Login</span></center>
+            <form action="../index.html">
+                <input type="text" id="username" placeholder="Name" required maxlength="20"><i class="fa-solid fa-user-tie" id="user-icon"></i>
+                <!-- <input type="password" id="password" placeholder="Password" required maxlength="24"><i class="fa-solid fa-lock" id="password-icon"></i> -->
+                <!-- <input type="text" list="Countries" placeholder="Country" style="font-weight: 700;" required>
+                <datalist id="Countries">
+                    <option value="Egypt"></option>
+                    <option value="France"></option>
+                    <option value="US"></option>
+                    <option value="UK"></option>
+                    <option value="Germany"></option>
+                    <option value="And More Soon"></option>
+                </datalist> -->
+                <div id="lang">
+                    <span>Langauge:</span>
+                    <label for="English">English</label>
+                    <input type="radio" id="English" name="Language" required>
+                    <label for="Arabic">Arabic</label>
+                    <input type="radio" id="Arabic" name="Language">
+                </div>
+                <label for="Coin">Currency:</label>
+                <select id="Coin" style="font-size: 20px; font-weight: 900; font-family: sans-serif; color: white; background-color: transparent; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 5px; padding-left: 20px; padding-right: 20px;">
+                    <option value="EGP" style="background-color: black; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">EGP</option>
+                    <option value="USD" style="background-color: black; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">USD</option>
+                    <option value="EUR" style="background-color: black; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">EUR</option>
+                </select><br><br>
+                <div id="mode-div">
+                    <span>Mode:</span>
+                    <label for="dark">Dark <i class="fa-solid fa-moon"></i></label>
+                    <input type="radio" name="mode" id="dark" required>
+                    <label for="light">Light <i class="fa-solid fa-sun"></i></label>
+                    <input type="radio" name="mode" id="light">
+                </div>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

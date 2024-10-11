@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#" id="MY-HTML">
+<head>
+    <meta name="author" content="Marc Akram Amir"/>
+    <meta property="og:locale" content="en-US"/>
+    <meta property="og:description" content="Welcome To Marc&Sam Web develepment offical website!"/>
+    <meta property="og:title" content="Welcome To Marc&Sam Web develepment offical website!"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="Main-logo-image-nobg.png"/>
+    <meta property="og:url" content="https://marc-sam-webdevs.netlify.app/"/>
+    <meta property="og:site-name" content="marc-sam-webdevs.netlify.app/"/>
+
+    <meta name="twitter:title" content="Welcome To Marc&Sam Web develepment offical website!"/>
+    <meta name="twitter:description" content="Welcome To Marc&Sam Web develepment offical website!"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="Main-logo-image-nobg.png"/>
+    <meta name="twitter:creator" content=""/>
+    <meta name="twitter:site" content=""/>
+
+    <meta name="description" content="This is Marc&Sam Offical Website That can make your website even better than this"/>
+    <meta name="keywords" content="Marc&Sam Offical Website,Marc,Sam,Web development,Web developers,Marc and Sam, Marc&Sam for websites, Marc&Sam offical web,Sam Web development,Marc for web development,Marc&Sam"/>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0"/>
+    <meta charset="UTF-8"/>
+    <title>Marc&Sam for web development</title>
+    <meta http-equiv="X-UA-Comptible" content="IE=edge"/>
+    <meta name="copyright" content="Marc&Sam Devs"/> 
+    <link rel="icon" href="https://i.ibb.co/wQ2QP6K/Marc-Sam-removebg-preview1.png"/>
+    <link rel="shortcut" href="https://i.ibb.co/wQ2QP6K/Marc-Sam-removebg-preview1.png"/>
+    <link rel="apple-touch-icon" href="https://i.ibb.co/wQ2QP6K/Marc-Sam-removebg-preview1.png"/>
+    <link rel="stylesheet" href="Main-Style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <meta name="google-site-verification" content="iCZ2xDc3f1UYZbGyHyjHPJZOqQVDY6AQvRWoDpQU19E" />
+</head>
+<body>
+
+    <section>
+        <div id="Login-div">
+            <div>
+                <center><span>Login</span></center>
+                <form method="dialog" onsubmit="Loggedin()" id="login-form">
+                    <input type="text" id="username" placeholder="Name" required>
+                    <!-- <input type="password" id="password" placeholder="Password" required maxlength="24"><i class="fa-solid fa-lock" id="password-icon"></i> -->
+                    <!-- <input type="text" list="Countries" placeholder="Country" style="font-weight: 700;" required>
+                    <datalist id="Countries">
+                        <option value="Egypt"></option>
+                        <option value="France"></option>
+                        <option value="US"></option>
+                        <option value="UK"></option>
+                        <option value="Germany"></option>
+                        <option value="And More Soon"></option>
+                    </datalist> -->
+                    <div id="lang-div">
+                        <span>Language:</span>  
+                        <input type="radio" id="English1" name="Languagez" required onchange="Translate2()" style="margin-right: 5px;">
+                        <label for="English1" style="margin-right: 15px;">English</label>
+                        <input type="radio" id="Arabic1" name="Languagez" onchange="Translate()" style="margin-right: 5px;">
+                        <label for="Arabic1">Arabic</label>
+                    </div><br><br>
+                    <label for="Coin">Currency:</label>
+                    <select id="Coin" style="font-size: 20px; font-weight: 900; font-family: sans-serif; color: white; background-color: transparent; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 5px; padding-left: 20px; padding-right: 20px;">
+                        <option value="EGP" onclick="EGP()" style="background-color: black; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">EGP</option>
+                        <option value="USD" onclick="USD()" style="background-color: black; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">USD</option>
+                        <option value="EUR" style="background-color: black; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">EUR</option>
+                    </select><br><br>
+                    <div id="mode-div">
+                        <span>Mode:</span>
+                        <input type="radio" name="modez" id="darkz" required onchange="ToDark()" style="margin-right: 5px;">
+                        <label for="darkz" style="margin-right: 15px;">Dark <i class="fa-solid fa-moon"></i></label>
+                        <input type="radio" name="modez" id="lightz" onchange="ToLight()">
+                        <label for="lightz">Light <i class="fa-solid fa-sun" style="margin-right: 5px;"></i></label>
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    
+    </section>
+
+
+    <!--LOGIN FORM END-->
+
+
+
+    <header id="header">
+        <div class="main-header" id="main-header">
+            <div id="menu-social-icon" style="display: none;"><i class="fa-solid fa-bars" style="font-size: 40px; font-weight: 900;" id="menu-bars" onclick="Social_Toggle()"></i></div>
+            <div id="social-icons-Parent" style="transform: translateX(20px);">
+                <a href="https://api.whatsapp.com/send?phone=201229702684" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61565938905420" target="_blank" id="facebook-anchor"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="mailto:marcakram31@gmail.com?" target="_blank" ><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <a href="#" id="Home">
+               <div id="Pc">Marc&Sam</div>
+               <div id="phone">Home</div>
+            </a>
+            <!-- <div>
+                <i class="fa-solid fa-language Translate" id="Translate-to-Ar" onclick="Translate()"></i>
+                <i class="fa-solid fa-language Translate" id="Translate-to-En" onclick="Translate2()" style="display: none;"></i>
+            </div> -->
+            <span>
+                <i class="fa-solid fa-gear" onclick="menu_open()"></i>
+            </span>
+        </div>
+        <div class="main-header" id="main-second-header" style="display: none;">
+            <a href="https://api.whatsapp.com/send?phone=201229702684" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61565938905420" target="_blank" id="facebook-anchor"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="mailto:marcakram31@gmail.com?" target="_blank" ><i class="fa-regular fa-envelope"></i></a>
+        </div>
+        <br><br><br><br><br>
+        <div class="style-txt">
+            <article id="header-text-bg">
+                <span id="Get-word">Get Your Website</span> 
+                <span id="Up-word">Up</span>
+                <span id="Running-word">and Running.</span>
+                <span id="Today-word">Today</span>
+            </article>
+            <span id="logo-container"><img src="11.gif" id="main-logo" alt="Sorry this animated logo isn't availble right now if you wish to see it without animation go to https://i.ibb.co/5k7f1S9/Marc-Sam-removebg-preview22.png"></span>
+        </div>
+    </header>
+    <div id="Settings-Backgound">
+        <div id="Settings-Parent">
+            <i class="fa-solid fa-x" onclick="menu_close()"></i>
+            <div>
+                <span id="Theme-Text"><u>Theme:</u></span>
+                <input type="radio" name="themes" id="dark" onchange="ToDark()" checked>
+                <label for="dark" id="dark-text">Dark <i class="fa-solid fa-moon"></i></label>
+                <input type="radio" name="themes" id="light" onchange="ToLight()">
+                <label for="light" id="light-text">Light <i class="fa-solid fa-sun"></i></label>
+            </div>
+            <br>
+            <div>
+                <span id="Language-text"><u>Language:</u></span>
+                <input type="radio" name="Languages" id="English" onchange="Translate2()" checked>
+                <label for="English" id="English-text">English</label>
+                <input type="radio" name="Languages" id="Arabic" onchange="Translate()">
+                <label for="Arabic" id="Arabic-text">Arabic</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="ShowNav" onchange="ToggleNav()">
+                <label for="ShowNav" style="margin-left: 10px;" id="Show-nav-text">Hide Navigation Bar</label>
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="BlurNav" onchange="ToggleNavBG()" checked>
+                <label for="BlurNav" style="margin-left: 10px;" id="Blur-N-Nav">Navigation Bar Blurry Background</label>
+            </div>
+            <br>
+            <div id="Beta-PC">
+                <span id="Nav-Pos-Text-PC"><u>Navigation Bar Position</u></span>
+                <center><input type="radio" name="Nav-Pos-PC" id="Right_PC" onchange="NavBarToggleLeftRight_PC()" checked>
+                <label for="Right_PC" id="Nav-Right-PC">Right</label>
+                <input type="radio" name="Nav-Pos-PC" id="Left_PC" onchange="NavBarToggleLeftRight_PC()">
+                <label for="Left_PC" id="Nav-Left-PC">Left</label></center>
+                <!-- <label for="Bottom">Bottom</label>
+                <input type="radio" name="Nav-Pos" id="Bottom" onchange="NavBarToggleBottom()"> -->
+            </div>
+            <br>
+            <!-- <div>
+                <span id="Nav-Pos-Text"><u>Navigation Bar Position (Beta):</u></span><br>
+                <center><label for="Right" id="Nav-Right">Right</label>
+                <input type="radio" name="Nav-Pos" id="Right" onchange="NavBarToggleLeftRight()" checked>
+                <label for="Left" id="Nav-Left">Left</label>
+                <input type="radio" name="Nav-Pos" id="Left" onchange="NavBarToggleLeftRight()"></center>
+                <label for="Bottom">Bottom</label>
+                <input type="radio" name="Nav-Pos" id="Bottom" onchange="NavBarToggleBottom()"> 
+            </div> -->
+            <button id="log-out">Log Out <i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+    </div>
+         
+        <!--<aside  id="menu-aside">
+            <i class="fa-solid fa-x" onclick="menu_close()"></i>
+            <br><br>
+            <div> -->
+                <!-- <div id="Features-aside"><a href="#Features-area" onclick="menu_close()"><u class="underlines"><span>Our Features</span></u></a></div> -->
+                <!-- <div id="Products-aside"><a href="#Products-area" onclick="menu_close()"><u class="underlines"><span>Our Products</span></u></a></div> -->
+                <!-- <div id="Steps-aside"><a href="#Steps-area" onclick="menu_close()"><u class="underlines"><span>Steps</span></u></a></div> -->
+                <!-- <div id="About-aside"><a href="#about-us-area" onclick="menu_close()"><u class="underlines"><span>About Us</span></u></a></div> -->
+                <!-- <div id="Projects-aside"><a href="#Projects-area" onclick="menu_close()"><u class="underlines"><span>Our Projects</span></u></a></div> -->
+                
+                <!-- <div>
+                    <span id="Theme-Text"><u>Theme:</u></span>
+                    <label for="dark" id="dark-text">Dark <i class="fa-solid fa-moon"></i></label>
+                    <input type="radio" name="themes" id="dark" onchange="" checked>
+                    <label for="light" id="light-text">Light <i class="fa-solid fa-sun"></i></label>
+                    <input type="radio" name="themes" id="light" onchange="">
+                </div> -->
+
+                <!-- <div>
+                    <span id="Theme-Text"><u>Theme:</u></span>
+                    <label for="dark" id="dark-text">Dark <i class="fa-solid fa-moon"></i></label>
+                    <input type="radio" name="themes" id="dark" onchange="" checked>
+                    <label for="light" id="light-text">Light <i class="fa-solid fa-sun"></i></label>
+                    <input type="radio" name="themes" id="light" onchange="">
+                </div>
+                <br> -->
+                <!-- <div>
+                    <label for="ShowNav" style="margin-right: 10px;" id="Show-nav-text">Hide Navigation Bar</label>
+                    <input type="checkbox" id="ShowNav" onchange="ToggleNav()">
+                </div>
+                <br>
+                <div>
+                    <label for="BlurNav" style="margin-right: 10px;" id="Blur-N-Nav">Navigation Bar Blurry Background</label>
+                    <input type="checkbox" id="BlurNav" onchange="ToggleNavBG()" checked>
+                </div>
+                <br>
+                <div class="Beta-Features-PC" id="Beta-PC">
+                    <span id="Nav-Pos-Text-PC"><u>Navigation Bar Position (Beta):</u></span>
+                    <center><label for="Right_PC" id="Nav-Right-PC">Right</label>
+                    <input type="radio" name="Nav-Pos-PC" id="Right_PC" onchange="NavBarToggleLeftRight_PC()" checked>
+                    <label for="Left_PC" id="Nav-Left-PC">Left</label>
+                    <input type="radio" name="Nav-Pos-PC" id="Left_PC" onchange="NavBarToggleLeftRight_PC()"></center> -->
+                    <!-- <label for="Bottom">Bottom</label>
+                    <input type="radio" name="Nav-Pos" id="Bottom" onchange="NavBarToggleBottom()"> -->
+                <!-- </div> -->
+                <!-- <br>
+                <div class="Beta-Features">
+                    <span id="Nav-Pos-Text"><u>Navigation Bar Position (Beta):</u></span><br>
+                    <center><label for="Right" id="Nav-Right">Right</label>
+                    <input type="radio" name="Nav-Pos" id="Right" onchange="NavBarToggleLeftRight()" checked>
+                    <label for="Left" id="Nav-Left">Left</label>
+                    <input type="radio" name="Nav-Pos" id="Left" onchange="NavBarToggleLeftRight()"></center> -->
+                    <!-- <label for="Bottom">Bottom</label>
+                    <input type="radio" name="Nav-Pos" id="Bottom" onchange="NavBarToggleBottom()"> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        <!-- </aside> -->
+        <!-- <section id="scroller">
+            <a href="#Features-area" onclick="scroll_down()"><i class="fa-solid fa-caret-down" id="arrow-down"></i></a>
+        </section> -->
+        <!-- <section>
+            <div id="Quick-Actions-Big-Div">
+                <div id="Quick-Actions-Title">
+                    Quick Actions
+                </div><br>
+                <center><div id="Quick-Actions-Buttons-Div">
+                    <a href="#Features-area"><button class="Quick-Actions-Buttons">Our Features</button></a>
+                    <a href="#Products-area"><button class="Quick-Actions-Buttons">Our Products</button></a>
+                    <a href="#Steps-area"><button class="Quick-Actions-Buttons">Steps</button></a> //NO STEPS
+                    <a href="#about-us-area"><button class="Quick-Actions-Buttons">About Us</button></a>
+                    <a href="#Projects-area"><button class="Quick-Actions-Buttons">Our Projects</button></a>
+                </div></center>
+            </div><br><br><br>
+        </section> -->
+        </div>
+        <!--Easy nav-->
+        <div id="Ez-N-Parent" style="right: 25px;">
+            <div class="Ez-N-Childs" id="Ez-1"><a href="#Features-area" onclick="menu_close()"><i class="fa-solid fa-list-check"></i></a></div>
+            <div class="Ez-N-Childs" id="Ez-2"><a href="#Products-area" onclick="menu_close()"><i class="fa-solid fa-bag-shopping"></i></a></div>
+            <div class="Ez-N-Childs" id="Ez-3"><a href="#about-us-area" onclick="menu_close()"><i class="fa-solid fa-circle-info"></i></a></div>
+            <div class="Ez-N-Childs" id="Ez-4"><a href="#Projects-area" onclick="menu_close()"><i class="fa-solid fa-briefcase"></i></a></div>
+            <div class="Ez-N-Childs" id="Ez-5"><a href="#FAQ-Section" onclick="menu_close()"><i class="fa-solid fa-question"></i></a></div>
+
+        </div>
+    </header><br><br><br><br>
+    <main id="main">
+        <article>
+            <div id="Big-Res-Div">
+                <div id="Res-Title">Get Your Website Responsive on any device.</div>
+                <div id="images-div">
+                    <img src="Files/iphone.png" alt="Phone">
+                    <img src="Files/ipad.webp" alt="Tablet">
+                    <img src="Files/computer-2214393-ai-test.webp" alt="Computer">
+                </div>
+            </div>
+            <address id="Features-area"></address>
+            <hr class="seperators">
+        </article>
+        <!--Our Features Section-->
+        <article>
+            <div id="Features-Title">Our Features:</div>
+            <div id="Our-Features-Big">
+                <div id="fix">
+                    <i class="fa-solid fa-wrench"></i>
+                    <span class="text" id="fix-text">Fix & Repair Your Old Website</span>
+                </div>
+                <div id="Respinsive-Templates">
+                    <i class="fa-solid fa-display"></i>
+                    <span class="text" id="res-text">Responsive Templates</span>
+                </div>
+                <div id="Fast">
+                    <i class="fa-regular fa-clock"></i>
+                    <div class="text" id="time-text">Get Your Website Without Waiting much time</div>
+                </div>
+                <div id="domain">
+                    <i class="fa-solid fa-globe"></i>
+                    <div class="text" id="domain-text">Get Your Domain For Free</div>
+                </div>
+                <div id="customize">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <div class="text" id="edit-text">Customizable Design</div>
+                </div>
+                <div id="browser">
+                    <i class="fa-regular fa-window-restore"></i>
+                    <div class="text" id="browser-text">Get Your Website On Any Browser</div>
+                </div>
+                <div id="Translate-Feature">
+                    <i class="fa-solid fa-language" id="langf"></i>                    
+                    <div class="text" id="languages-text">Multiple Languages Website</div>
+                </div>
+                <div id="a1" class="extra_Spacing"></div>
+                <div id="a2" class="extra_Spacing"></div>
+                <address id="Products-area"></address>
+            </div>
+        </article>
+        <hr class="seperators" id="testSp">
+        <article>
+            <div id="Shopping-Card-Title" class="blueviolet">Our Products:</div>
+            <br>
+            <div id="Big_Shopping">
+                <div id="Shopping-Card-Kebeir">
+                    <div id="Product1">
+                        <center>
+                            <img src="files/Website-image.png" alt="Website Photo"><br>
+                            <span id="Product1-Title">Simple, Basic Website</span><br>
+                        </center>
+                        <ul id="Product1-ul">
+                            <li id="Product1-Code">Organized Code</li><br>
+                            <li id="Product1-Res">Responsive(Can Be opened on any device)</li><br>
+                            <li id="Product1-UI">Good User Interface/User Experience</li><br>
+                            <li id="Product1-Sections">Menu, Header and Footer</li><br>
+                            <li id="Product1-Price">Budget-Friendly Price(2500egp aprox.)</li><br>
+                            <li id="Product1-Style" class="Product1_list-items">Good Style</li>
+                            <li id="Product1-Hover" class="Product1_list-items">On-Hover/On-Click Transitions</li>
+                            <li id="Product1-Suitable">Suitable For News,Articles and Simple Portfolio Websites.</li><br>
+                            <li id="Product1-Animations">Animations</li>
+                        </ul><br>
+                    </div>
+                    <div id="Product2">
+                        <center>
+                            <div id="recommended-background">Recommended</div>
+                            <img src="files/Website-image.png" alt="Website Photo"><br>
+                            <span id="Product2-Title">Medium Website</span><br>
+                        </center>
+                        <ul id="Product2-ul">
+                            <li id="Product2-Res">Responsive(Can Be opened on any device)</li><br>
+                            <li id="Product2-Code">Organized Code</li><br>
+                            <li id="Product2-UI">Better User Interface/User Experience</li><br>
+                            <li id="Product2-Style">Good Style</li><br>
+                            <li id="Product2-Sections">Menu, Header and Footer</li><br>
+                            <li id="Product2-Hover">On-Hover/On-Click Transitions</li><br>
+                            <li id="Product2-Price">Budget-Friendly Price(5000egp aprox.)</li><br>
+                            <li id="Product2-Suitable">Suitable For Advanced Portfolio And Most of Advanced Websites.</li><br>
+                            <li id="Product2-Animations">Animations</li>
+                        </ul><br>
+                    </div>
+                    <div id="Product3">
+                        <center>
+                            <img src="files/Website-image.png" alt="Website Photo"><br>
+                            <span id="Product3-Title">Complex Website</span><br>
+                        </center>
+                        <ul id="Product3-ul">
+                            <li id="Product3-Res">Responsive(Can Be opened on any device)</li><br>
+                            <li id="Product3-Code">Organized Code</li><br>
+                            <li id="Product3-UI">Best User Interface/User Experience</li><br>
+                            <li id="Product3-Style">Best Style</li><br>
+                            <li id="Product3-Hover">On-Hover/On-Click Transitions</li><br>
+                            <li id="Product3-Sections">Menu, Header and Footer</li><br>
+                            <li id="Product3-Price">Budget-Friendly Price(10000egp aprox.)</li><br>
+                            <li id="Product3-Suitable">Suitable For Any Kind of Advanced Website</li><br>
+                            <li id="Product3-Animations">Complex Animations</li>
+                        </ul><br>
+                        <!-- <address id="Steps-area"></address> -->
+                    </div>
+                </div>
+                <address id="about-us-area"></address>
+                <center><span id="Order-Now"><button><a href="https://forms.gle/SknkiugWksCW61HZA" target="_blank">Order Now</a></button></span></center>
+            </div>
+        </article><br><br><hr class="seperators" id="testSp2">
+        <!-- <article> 
+            <div id="Steps"> 
+                <div id="Steps-Title">Steps</div>
+                <div id="items">
+                    -->
+                    <!--<div id="item1">Choose Your desired product</div>
+                    <div id="item2">After Choosing your product and Complete The order Wait From 3 hours to 1 day Till we contact you on Your Email</div>
+                
+                    <div id="item3">After We Send You an Email You Will send Us The content That you want to put in your Website Then wait 1-3days Till we finish Working on your Website and Show you the Final look</div>
+                    <div id="item4">Congratulations Your Website is now running and ready to be published!</div>
+                </div>
+            </div>
+        </article><br><br>
+        add steps in future -->
+        <div id="About-Us-Big">
+            <div id="About-Us-Title">About Us</div><br>
+            <div id="Our-Vision-Title">Our Vision:</div>
+            <div id="Our-Vision-Big">
+                <div id="Our-Vision-Left">
+                    <div id="Our-Vision">
+                        Our Main Goal is to design and create your User-Friendly Website
+                        Responsive on all devices as fast as possible with high quality and low price!
+                    </div>
+                </div>
+                <div id="Our-Vision-Right">
+                    <img src="files/Our-vision.png" alt="Our-vision">
+                </div>
+            </div>
+            <div id="Team-Managers-Title">Our Team Managers:</div>
+            <div id="Team-Manager1-Big">
+                <div id="Team-Manager1-Left">
+                    <div id="Team-Manager1-Title">
+                        Marc Akram:
+                    </div>
+                    <div id="Team-Manager1">
+                        <ul type="disc">
+                            <li id="TM1-1">Front-end developer and Overall Manager.</li>
+                            <li id="TM1-2">1 year of Experience.</li>
+                            <li id="TM1-3">Mastered  all Front-end Programming Languages(HTML , CSS and JavaScript).</li>
+                            <li id="TM1-4">The designer and the developer of this website.</li>
+                        </ul>
+                    </div><br><br><br>
+                </div>
+                <div id="Team-Manager1-Right">
+                    <div class="Team-Manager1-Photo">
+                        <!--<span id="Team-Manager1-bg">
+                            <img src="files/Team-Manager1.png" alt="Marc Akram" class="Team-Manger1-Photo">
+                        </span>
+                        </div> -->
+                        <img src="Files/Teamwork.png" alt="TeamWork">
+                    </div>
+                </div>
+            </div>
+            <div id="Team-Manager2-Big">
+                <div id="Team-Manager2-Left">
+                    <div id="Team-Manager2-Title">
+                        Samuel Mina:
+                    </div>
+                    <div id="Team-Manager2">
+                        <ul type="disc">
+                            <li id="TM2-1">Front-end developer and Marketing Manager.</li>
+                            <li id="TM2-2">1 year of Experience.</li>
+                            <li id="TM2-3">Mastered  all Front-end Programming Languages(HTML , CSS and JavaScript).</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="Team-Manager2-Right">
+                    <!-- <div>
+                        <div id="Team-Manager2-Photo-BG" class="Team-Manager2-Photo"></div>
+                    </div> -->
+                </div>  
+            </div>
+            <center><span id="Contact-Bottom"><a href="https://api.whatsapp.com/send?phone=201229702684" target="_blank"><button>☎️ Contact Us</button></a></span></center>
+        </div>
+        <address id="Projects-area"></address>
+        <hr class="seperators" id="testSp3">
+        <div id="Our-Projects-Title">Our Projects</div>
+        <div id="Our-Projects-Big">
+                <div id="Project1-Big">
+                    <i class="fa-regular fa-clock" style="margin-top: 10px;"></i>
+                    <p id="Project1-Title">Coming Soon!</p>
+                </div>
+        </div>
+        <hr class="seperators" id="testSp4">
+
+        <section id="FAQ-Section">
+            <span id="FAQ-Title">FAQs</span>
+            <div id="FAQs-Div">
+                <div id="FAQ1-Div">
+                    <span id="loading-iframe" style="font-size: 25px; font-weight: 900; color: #03fa6e;">Loading...</span>
+                    <iframe id="iframe-youtube" style="display: none;" src="https://www.youtube.com/embed/PGgnhx3w0rE" title="Why Every Business Should Have A Website ??? - Top 3 Reasons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    <span id="FAQ1-Title">Why is it important to have a website?</span>
+                </div>
+            </div>
+        </section>
+        <center><span id="Tech-Problem"><a href="https://forms.gle/oUSWyzmEgXoR3ND4A" target="_blank">Have a technical Problem?, Press <u class="underline-double">Here</u></a></span></center>
+        <hr class="seperators" id="testSp5">
+    </main>
+    <footer class="d1" id="footerr">
+        <div id="d1" class="d1">
+            <span id="copy">Some Images are by <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2214393" target="_blank">Pixabay</a></span>
+            <span id="t1">
+                <a href="mailto:marcakram31@gmail.com?" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=201229702684" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61565938905420" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            </span>
+        </div>
+        <span id="copyright">© Marc&Sam For Web develepment - All Rights Reserved</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
